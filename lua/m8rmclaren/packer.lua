@@ -15,9 +15,9 @@ return require('packer').startup(function(use)
         -- or                            , branch = '0.1.x',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
+    use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
+
     use({'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'})
-
-
     use("github/copilot.vim") -- Copilot integration
     use("tpope/vim-fugitive") -- Git commands in nvim
     use("nvim-treesitter/nvim-treesitter-context")
@@ -25,6 +25,7 @@ return require('packer').startup(function(use)
     use("tpope/vim-commentary") -- "gc" to comment visual regions/lines
     use("lukas-reineke/indent-blankline.nvim")
     use("windwp/nvim-autopairs")
+    use("alexghergh/nvim-tmux-navigation")
 
     -- Theme
     use { "catppuccin/nvim", as = "catppuccin" }
@@ -38,7 +39,8 @@ return require('packer').startup(function(use)
         'nvim-lualine/lualine.nvim',
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }
     }
-
+    
+    -- File explorer
     use("nvim-tree/nvim-tree.lua")
 
     use {

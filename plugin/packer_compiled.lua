@@ -139,6 +139,11 @@ _G.packer_plugins = {
     path = "/Users/hroszell/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-tmux-navigation"] = {
+    loaded = true,
+    path = "/Users/hroszell/.local/share/nvim/site/pack/packer/start/nvim-tmux-navigation",
+    url = "https://github.com/alexghergh/nvim-tmux-navigation"
+  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/Users/hroszell/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
@@ -174,6 +179,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/hroszell/.local/share/nvim/site/pack/packer/start/rose-pine",
     url = "https://github.com/rose-pine/neovim"
+  },
+  ["telescope-fzf-native.nvim"] = {
+    loaded = true,
+    path = "/Users/hroszell/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
+    url = "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
