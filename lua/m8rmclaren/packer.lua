@@ -26,6 +26,7 @@ return require('packer').startup(function(use)
     use("lukas-reineke/indent-blankline.nvim")
     use("windwp/nvim-autopairs")
     use("alexghergh/nvim-tmux-navigation")
+    use("akinsho/toggleterm.nvim")
 
     -- Theme
     use { "catppuccin/nvim", as = "catppuccin" }

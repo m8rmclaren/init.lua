@@ -24,6 +24,7 @@ end
 
 vim.keymap.set("n", "<leader>a", function() harpoon:list():append() end)
 vim.keymap.set("n", "<leader>c", function() harpoon:list():clear() end)
+vim.keymap.set("n", "<leader>d", function() harpoon:list():remove() end)
 vim.keymap.set("n", "<leader>e", function() toggle_telescope(harpoon:list()) end, { desc = "Open Harpoon window in Telescope" })
 
 vim.keymap.set("n", "<leader>h", function() harpoon:list():select(1) end)

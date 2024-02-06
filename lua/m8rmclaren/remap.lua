@@ -1,8 +1,5 @@
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
-
--- Keybinding to close the current buffer without writing
-vim.api.nvim_set_keymap('n', '<leader>q', ':bd!<CR>', { noremap = true, silent = true })
+-- vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 -- Copy and Paste (yank and put)
 
