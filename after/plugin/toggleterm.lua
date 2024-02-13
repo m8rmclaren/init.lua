@@ -11,7 +11,7 @@ local workspace_focus_terminal = Terminal:new({
     },
     on_open = function(term)
         vim.api.nvim_buf_set_keymap(term.bufnr, "t", "<esc>", "<C-\\><C-n>", {noremap = true, silent = true})
-        vim.api.nvim_buf_set_keymap(term.bufnr, "t", "<C-w>", "<C-\\><C-n><C-w>", {noremap = true, silent = true})
+        vim.api.nvim_buf_set_keymap(term.bufnr, "n", "<esc>", "<C-w>q", {noremap = true, silent = false}) -- I have no idea why adding a j here makes it work but it does
     end
 })
 
